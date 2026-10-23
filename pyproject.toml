@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=71,<81"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rosorin-smolvla-mujoco"
+version = "1.0.0"
+description = "Initial-image-only SmolVLA block grasping in the ROSOrin factory MuJoCo scene"
+requires-python = ">=3.10,<3.13"
+dependencies = ["mujoco==3.14.0", "numpy>=1.26,<3", "scipy>=1.11,<2", "Pillow>=10,<13"]
+
+[project.optional-dependencies]
+inference = ["torch==2.7.1", "torchvision==0.22.1", "transformers==4.57.6", "safetensors==0.8.0", "accelerate>=1.10,<2", "num2words>=0.5.14,<0.6", "lerobot @ git+https://github.com/huggingface/lerobot.git@0b067df57d21d3a02d6c511f1609172fa39ac29b"]
+test = ["pytest>=8,<10"]
+
+[project.scripts]
+rosorin-vla = "rosorin_vla.demo:main"
+rosorin-vla-download = "rosorin_vla.download:main"
+rosorin-vla-serve = "rosorin_vla.server:main"
+
+[tool.setuptools]
+packages = ["rosorin_vla", "rosorin_mujoco_sim"]
+
+[tool.setuptools.package-data]
+rosorin_vla = ["release_manifest.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

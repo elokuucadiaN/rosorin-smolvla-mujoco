@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "max_absolute_action_difference_rad": 0.0,
+  "bitwise_equal": true,
+  "cases": 6,
+  "weights_sha256": "117974341c69adb4e65e47fca8de221eccd192d4cf4fe588b95665ff8e10d1b0",
+  "backbone_initial_weights_required": false,
+  "gpu": 2,
+  "original_lerobot_commit": "0b067df57d21d3a02d6c511f1609172fa39ac29b"
+}

@@ -1,0 +1,209 @@
+{
+  "source_kinematic_camera_sha256": "fc5e6a2d9662eee51ed70fc0292298ce6f90d02c86b050f5d1111ad6ab89fe6e",
+  "scene_sha256": "02971826b44ef2629f8ad37e751396f986315839520f87c0dd2274dff9048c5b",
+  "factory_provenance": [
+    "vendor URDF link geometry, axes, limits and mimic",
+    "VMware nominal camera FOV/resolution and SRDF gripper open/close"
+  ],
+  "initial_pose": {
+    "arm": "user-selected demonstration posture reference only",
+    "gripper": "factory simulation initial r_joint=0"
+  },
+  "simulation_design": {
+    "timestep_s": 0.0005,
+    "integrator": "implicitfast",
+    "solver_iterations": 80,
+    "mimic_solref": [
+      0.004,
+      1
+    ],
+    "mimic_solimp": [
+      0.9999,
+      0.9999,
+      0.001
+    ],
+    "finger_joint_damping": 0.002,
+    "finger_joint_armature": 1e-05,
+    "arm_position_servo": {
+      "kp": 15,
+      "kv": 0.3,
+      "force_limit_nm": 1.176798,
+      "force_limit_scope": "documented HX-12H stall rating upper bound, not measured response"
+    },
+    "gripper_position_servo": {
+      "kp": 0.5,
+      "kv": 0.01,
+      "force_limit_nm": 0.04,
+      "scope": "numerical prototype only"
+    },
+    "command_rate_limit_rad_s": 2.0,
+    "friction": [
+      0.8,
+      0.005,
+      0.0001
+    ],
+    "expert_motion_profile": "quintic joint references; fixed arm during close/hold; approximate external-video phase timing",
+    "expert_stage_durations_s": {
+      "wait": 5.0,
+      "open": 0.8,
+      "approach": 2.0,
+      "descend": 1.0,
+      "close": 1.5,
+      "hold": 5.5
+    },
+    "timing_scope": "visual reference only; no real joint trajectory or servo speed calibration",
+    "task_tcp": "8mm proximal to original fingertip mesh maximum in gripper +X",
+    "block_side_m": 0.02,
+    "block_mass_kg": 0.008,
+    "paper_surface_z_m": 0.0805,
+    "robot_mesh_collision": "MuJoCo convex hulls; original mesh vertices retained",
+    "block_pose_reset": "reset only; no weld, attachment or runtime object teleport"
+  },
+  "collision_exclusion_source": "supplier MoveIt SRDF; fused fixed-link pairs mapped to compiled bodies",
+  "collision_frame_aliases": {
+    "camera_connect_link": "camera_link0",
+    "lidar_link": "lidar_frame"
+  },
+  "excluded_body_pairs": [
+    [
+      "l_in_link",
+      "l_out_link"
+    ],
+    [
+      "l_in_link",
+      "link3"
+    ],
+    [
+      "l_in_link",
+      "link4"
+    ],
+    [
+      "l_in_link",
+      "link5"
+    ],
+    [
+      "l_link",
+      "l_out_link"
+    ],
+    [
+      "l_link",
+      "link3"
+    ],
+    [
+      "l_link",
+      "link4"
+    ],
+    [
+      "l_link",
+      "link5"
+    ],
+    [
+      "l_link",
+      "r_link"
+    ],
+    [
+      "l_out_link",
+      "link3"
+    ],
+    [
+      "l_out_link",
+      "link4"
+    ],
+    [
+      "l_out_link",
+      "link5"
+    ],
+    [
+      "l_out_link",
+      "r_link"
+    ],
+    [
+      "link1",
+      "link2"
+    ],
+    [
+      "link1",
+      "link3"
+    ],
+    [
+      "link1",
+      "world"
+    ],
+    [
+      "link2",
+      "link3"
+    ],
+    [
+      "link2",
+      "link4"
+    ],
+    [
+      "link2",
+      "link5"
+    ],
+    [
+      "link2",
+      "world"
+    ],
+    [
+      "link3",
+      "link4"
+    ],
+    [
+      "link3",
+      "link5"
+    ],
+    [
+      "link3",
+      "r_in_link"
+    ],
+    [
+      "link3",
+      "r_link"
+    ],
+    [
+      "link3",
+      "r_out_link"
+    ],
+    [
+      "link4",
+      "link5"
+    ],
+    [
+      "link4",
+      "r_in_link"
+    ],
+    [
+      "link4",
+      "r_link"
+    ],
+    [
+      "link4",
+      "r_out_link"
+    ],
+    [
+      "link5",
+      "r_in_link"
+    ],
+    [
+      "link5",
+      "r_link"
+    ],
+    [
+      "link5",
+      "r_out_link"
+    ],
+    [
+      "r_in_link",
+      "r_out_link"
+    ],
+    [
+      "r_link",
+      "r_out_link"
+    ]
+  ],
+  "self_collision_enabled": true,
+  "hardware_calibrated": false,
+  "real_robot_ready": false,
+  "training_ready": false
+}

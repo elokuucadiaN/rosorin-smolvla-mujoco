@@ -1,0 +1,13 @@
+{
+  "profile": "factory_nominal_simulation",
+  "task": "open_approach_close_hold_on_paper",
+  "source_scene_sha256": "02971826b44ef2629f8ad37e751396f986315839520f87c0dd2274dff9048c5b",
+  "packaged_scene_sha256": "797049bf0e101dff71f674a045dbcea70dbc2a1a095e31773e2b230eb2e4689d",
+  "runtime_adaptations": [
+    "relative mesh paths",
+    "robot lidar exclusion group",
+    "factory FK ROS sensor sites and IMU sensors"
+  ],
+  "robot_geometry_or_camera_adjusted": false,
+  "hardware_calibrated": false
+}

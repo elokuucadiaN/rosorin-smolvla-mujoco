@@ -1,0 +1,28 @@
+{
+  "version": "v1.0.0",
+  "assets": [
+    {
+      "name": "smolvla-block-v1.tar.gz",
+      "sha256": "9cebcca1af6442f890f1d151afc47350169b3741ae013e8695edb95d2c3b6879",
+      "size_bytes": 728702767
+    }
+  ],
+  "model_files": {
+    "config.json": "98343f3d9b815107f59d2d431d10cb0edd6d751540ce0a213efcdaf8bcec6ba0",
+    "model_contract.json": "cceec05ad6b5ccd874a56f5029862a74b9b8f4012b3259cda37c698ecc12d807",
+    "stats.json": "390831801e3a3ddc10c6ba37d0a9570804cdbad794ac64fe8e41313e54c081c8",
+    "model.safetensors": "117974341c69adb4e65e47fca8de221eccd192d4cf4fe588b95665ff8e10d1b0",
+    "backbone/preprocessor_config.json": "149e315d9410368e5491455bb06e0f763426e9e56cca731c13b24404a29b6374",
+    "backbone/processor_config.json": "f3ad45028447b3562b4752be0d5916d6806c1ef589091a469608dcf0faa1737c",
+    "backbone/chat_template.json": "b585e3598909a5687f9f9d738d35223724dedef256b9b274e1cbfb32b13c74bf",
+    "backbone/merges.txt": "0b54e8aa4e53d5383e2e4bc635a56b43f9647f7b13832d5d9ecd8f82dac4f510",
+    "backbone/tokenizer.json": "5ece781dc8d2b2f3e2f289ca0ae50b17cfc27dd27bfe7971bb8241e0b964331a",
+    "backbone/special_tokens_map.json": "2dfea2a426162316ff1567c82bc6d36d9690cd9f90455f075c77daca78b45c60",
+    "backbone/vocab.json": "82b84012e3add4d01d12ba14442026e49b8cbbaead1f79ecf3d919784f82dc79",
+    "backbone/added_tokens.json": "74135b8664b56088c0006f1c8e848d79a8eba003411f72ebf1dc2ee96227be3a",
+    "backbone/tokenizer_config.json": "dd9ce2ab89a3dd881bd9378f1a79b943a064b9275a7e1706d5b7b47b68977913",
+    "backbone/config.json": "ea6bc1237e96247f6258de3e202e2e62b93d6f386dc47e7b36b5588bf3a15e17",
+    "backbone/generation_config.json": "34835060c9f0f74d1acb456cc72ca32746d3843d9eb5f578f9cbffac1d2eb840"
+  },
+  "weights_sha256": "117974341c69adb4e65e47fca8de221eccd192d4cf4fe588b95665ff8e10d1b0"
+}

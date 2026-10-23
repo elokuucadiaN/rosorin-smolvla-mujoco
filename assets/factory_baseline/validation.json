@@ -1,0 +1,372 @@
+{
+  "profile": "factory_reference",
+  "factory_init_action_required": false,
+  "simulation_adapter_checks_passed": true,
+  "training_ready": false,
+  "real_robot_ready": false,
+  "source_reference_sha256": "4a25ca731d68e0067f69fc4c044454f81ab6292bcc13fde6ea72767ff307a92c",
+  "source_unchanged": true,
+  "output_xml_sha256": "fc5e6a2d9662eee51ed70fc0292298ce6f90d02c86b050f5d1111ad6ab89fe6e",
+  "scope": "static factory kinematics, mimic relationships and nominal camera; no actuator/contact validation",
+  "camera": {
+    "reference_frame": "depth_cam_frame",
+    "attached_body": "link4",
+    "optical_to_mujoco_rotation": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -1.0
+      ]
+    ],
+    "extra_mount_translation_m": [
+      0,
+      0,
+      0
+    ],
+    "target_dependent_rotation": false,
+    "intrinsic_source": "factory_vm_gazebo_nominal_not_hardware_calibration",
+    "width": 640,
+    "height": 400,
+    "fx": 554.3827128226441,
+    "fy": 554.3827128226441,
+    "cx": 320.0,
+    "cy": 200.0,
+    "fovy_deg": 39.674994988401004,
+    "distortion": "none in nominal Gazebo model; hardware unknown",
+    "original_sensor_reference_mismatch_preserved_in_provenance": true
+  },
+  "camera_and_gripper_fk_checks": [
+    {
+      "pose": "factory_sim_initial",
+      "camera_position_error_m": 9.259500001942346e-10,
+      "camera_axis_matrix_error": 1.584536412135767e-08,
+      "max_gripper_fk_position_error_m": 2.3779255693881882e-08
+    },
+    {
+      "pose": "selected_task_initial_reference",
+      "camera_position_error_m": 1.0231235823496027e-09,
+      "camera_axis_matrix_error": 1.5599291189383448e-08,
+      "max_gripper_fk_position_error_m": 2.378043749738387e-08
+    },
+    {
+      "pose": "independent_probe",
+      "camera_position_error_m": 2.1817775460700293e-09,
+      "camera_axis_matrix_error": 1.6534135786870233e-08,
+      "max_gripper_fk_position_error_m": 2.359674521177542e-08
+    }
+  ],
+  "rendered_projection_checks": [
+    {
+      "marker": 0,
+      "predicted_pixel": [
+        208.62345743547118,
+        125.58230495698079
+      ],
+      "rendered_pixel": [
+        208.77083333333334,
+        125.77083333333333
+      ],
+      "pixel_error": 0.2392960592253913
+    },
+    {
+      "marker": 1,
+      "predicted_pixel": [
+        393.4176950430192,
+        144.0617287177356
+      ],
+      "rendered_pixel": [
+        393.3061224489796,
+        144.05102040816325
+      ],
+      "pixel_error": 0.11208528732454563
+    },
+    {
+      "marker": 2,
+      "predicted_pixel": [
+        264.0617287177356,
+        291.897118803774
+      ],
+      "rendered_pixel": [
+        264.0408163265306,
+        291.9591836734694
+      ],
+      "pixel_error": 0.06549332909708154
+    },
+    {
+      "marker": 3,
+      "predicted_pixel": [
+        430.3765425645288,
+        273.4176950430192
+      ],
+      "rendered_pixel": [
+        430.2291666666667,
+        273.2291666666667
+      ],
+      "pixel_error": 0.2392960592253339
+    },
+    {
+      "marker": 4,
+      "predicted_pixel": [
+        319.5,
+        199.5
+      ],
+      "rendered_pixel": [
+        319.5,
+        199.5
+      ],
+      "pixel_error": 0.0
+    }
+  ],
+  "gripper_mimic_map": {
+    "l_joint": {
+      "joint": "r_joint",
+      "multiplier": 1.0,
+      "offset": 0.0
+    },
+    "l_in_joint": {
+      "joint": "r_joint",
+      "multiplier": -1.0,
+      "offset": 0.0
+    },
+    "l_out_joint": {
+      "joint": "r_joint",
+      "multiplier": 1.0,
+      "offset": 0.0
+    },
+    "r_in_joint": {
+      "joint": "r_joint",
+      "multiplier": 1.0,
+      "offset": 0.0
+    },
+    "r_out_joint": {
+      "joint": "r_joint",
+      "multiplier": -1.0,
+      "offset": 0.0
+    }
+  },
+  "gripper_sweep": [
+    {
+      "r_joint_rad": -0.68,
+      "signed_outer_finger_gap_m": 0.0009105751930316333
+    },
+    {
+      "r_joint_rad": -0.63,
+      "signed_outer_finger_gap_m": 0.0038075692823324406
+    },
+    {
+      "r_joint_rad": -0.5800000000000001,
+      "signed_outer_finger_gap_m": 0.006694692707317814
+    },
+    {
+      "r_joint_rad": -0.53,
+      "signed_outer_finger_gap_m": 0.009564729163010127
+    },
+    {
+      "r_joint_rad": -0.48000000000000004,
+      "signed_outer_finger_gap_m": 0.01241050505295619
+    },
+    {
+      "r_joint_rad": -0.43000000000000005,
+      "signed_outer_finger_gap_m": 0.015224907419482608
+    },
+    {
+      "r_joint_rad": -0.38,
+      "signed_outer_finger_gap_m": 0.0180009017223855
+    },
+    {
+      "r_joint_rad": -0.33,
+      "signed_outer_finger_gap_m": 0.02073154942161745
+    },
+    {
+      "r_joint_rad": -0.28,
+      "signed_outer_finger_gap_m": 0.023410025320024223
+    },
+    {
+      "r_joint_rad": -0.23000000000000004,
+      "signed_outer_finger_gap_m": 0.0260296346227831
+    },
+    {
+      "r_joint_rad": -0.18000000000000005,
+      "signed_outer_finger_gap_m": 0.028583829670903338
+    },
+    {
+      "r_joint_rad": -0.13,
+      "signed_outer_finger_gap_m": 0.031066226306963676
+    },
+    {
+      "r_joint_rad": -0.07999999999999996,
+      "signed_outer_finger_gap_m": 0.03347061983218117
+    },
+    {
+      "r_joint_rad": -0.030000000000000027,
+      "signed_outer_finger_gap_m": 0.0357910005149267
+    },
+    {
+      "r_joint_rad": 0.020000000000000018,
+      "signed_outer_finger_gap_m": 0.038021568611924295
+    },
+    {
+      "r_joint_rad": 0.06999999999999995,
+      "signed_outer_finger_gap_m": 0.04015674886458889
+    },
+    {
+      "r_joint_rad": 0.12,
+      "signed_outer_finger_gap_m": 0.04219120443426921
+    },
+    {
+      "r_joint_rad": 0.17000000000000004,
+      "signed_outer_finger_gap_m": 0.04411985024156499
+    },
+    {
+      "r_joint_rad": 0.21999999999999997,
+      "signed_outer_finger_gap_m": 0.045937865676377344
+    },
+    {
+      "r_joint_rad": 0.27,
+      "signed_outer_finger_gap_m": 0.047640706646923374
+    },
+    {
+      "r_joint_rad": 0.31999999999999995,
+      "signed_outer_finger_gap_m": 0.04922411693759912
+    },
+    {
+      "r_joint_rad": 0.37,
+      "signed_outer_finger_gap_m": 0.05068413884730209
+    },
+    {
+      "r_joint_rad": 0.42000000000000004,
+      "signed_outer_finger_gap_m": 0.05201712308162268
+    },
+    {
+      "r_joint_rad": 0.4700000000000001,
+      "signed_outer_finger_gap_m": 0.0532197378741799
+    },
+    {
+      "r_joint_rad": 0.5200000000000001,
+      "signed_outer_finger_gap_m": 0.054288977314302
+    },
+    {
+      "r_joint_rad": 0.57,
+      "signed_outer_finger_gap_m": 0.055222168860237855
+    },
+    {
+      "r_joint_rad": 0.62,
+      "signed_outer_finger_gap_m": 0.05601698001911932
+    },
+    {
+      "r_joint_rad": 0.67,
+      "signed_outer_finger_gap_m": 0.05667142417697888
+    },
+    {
+      "r_joint_rad": 0.7200000000000001,
+      "signed_outer_finger_gap_m": 0.05718386556424984
+    },
+    {
+      "r_joint_rad": 0.7700000000000001,
+      "signed_outer_finger_gap_m": 0.0575530233443383
+    },
+    {
+      "r_joint_rad": 0.82,
+      "signed_outer_finger_gap_m": 0.05777797481504772
+    }
+  ],
+  "named_gripper_gap_monotonic": true,
+  "named_open_is_physical_maximum_verified": false,
+  "gripper_driver_model_compatibility": [
+    {
+      "pulse": 150,
+      "supplied_driver_angle_rad": 2.3038346126325147,
+      "within_model_limit": false,
+      "physical_linkage_calibrated": false
+    },
+    {
+      "pulse": 498,
+      "supplied_driver_angle_rad": 0.8461356213668508,
+      "within_model_limit": true,
+      "physical_linkage_calibrated": false
+    },
+    {
+      "pulse": 520,
+      "supplied_driver_angle_rad": 0.7539822368615503,
+      "within_model_limit": true,
+      "physical_linkage_calibrated": false
+    },
+    {
+      "pulse": 700,
+      "supplied_driver_angle_rad": 0.0,
+      "within_model_limit": true,
+      "physical_linkage_calibrated": false
+    }
+  ],
+  "initial_scene_previews": [
+    {
+      "pose": "factory_sim_initial",
+      "red_block_visible_pixels": 0,
+      "block_center_optical_m": [
+        -0.03295995741969738,
+        0.1029931592951,
+        0.168086161793849
+      ],
+      "block_center_projected_pixel": [
+        211.2912852917596,
+        539.6926102829348
+      ],
+      "layout_scope": "old simulation dimensions only; not measured physical layout"
+    },
+    {
+      "pose": "selected_task_initial_reference",
+      "red_block_visible_pixels": 0,
+      "block_center_optical_m": [
+        -0.0329008739493402,
+        0.09062192339600862,
+        0.18868007746635493
+      ],
+      "block_center_projected_pixel": [
+        223.33014487168873,
+        466.2667325989606
+      ],
+      "layout_scope": "old simulation dimensions only; not measured physical layout"
+    }
+  ],
+  "selected_task_initial_reference": {
+    "pulses": [
+      500,
+      725,
+      48,
+      149,
+      500,
+      498
+    ],
+    "joint_angles_rad": {
+      "joint1": 0.0,
+      "joint2": -0.9424777960769378,
+      "joint3": 1.8933331725634486,
+      "joint4": 1.470265361880023,
+      "joint5": 0.0,
+      "r_joint": 0.8461356213668508
+    },
+    "scope": "user-selected posture reference only; not real training samples or factory power-on init"
+  },
+  "simulation_steps": 0,
+  "hardware_commands": 0,
+  "remaining": [
+    "hardware_camera_variant_and_intrinsics",
+    "hardware_optical_origin",
+    "hardware_gripper_servo_to_linkage_mapping",
+    "actuator_contact_dynamics"
+  ],
+  "documentation": [
+    "https://mujoco.readthedocs.io/en/stable/XMLreference.html#body-camera",
+    "https://github.com/ros-infrastructure/rep/blob/master/rep-0103.rst"
+  ]
+}
